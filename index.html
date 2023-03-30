@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aplikasi Menghitung Pajak PBB</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div id="card">
+    <div id="card-content">
+      <div id="card-title">
+        <h2>PBB</h2>
+        <p>Pajak Bumi Bangunan</p>
+        <div class="garis">
+        </div>
+      </div>
+
+      <form method="post" class="form">
+        <label for="luasTanah" style="padding-top:13px">
+          &nbsp;Luas Tanah(m)
+        </label>
+        <input id="luasTanah" class="form-content" name="luasTanah" type="number" autocomplete="on" required />
+        <div class="form-border"></div>
+        <label for="luasBangunan" style="padding-top:22px">&nbsp;Luas Bangunan(m)
+        </label>
+        <input id="luasBangunan" class="form-content" type="number" name="luasBangunan" required />
+        <div class="form-border"></div>
+        <label for="njopTanah" style="padding-top:22px">&nbsp;NJOP Tanah(Rp.)
+        </label>
+        <input id="njopTanah" class="form-content" type="number" name="njopTanah" required />
+        <div class="form-border"></div>
+        <label for="njopBangunan" style="padding-top:22px">&nbsp;NJOP Bangunan(Rp.)
+        </label>
+        <input id="njopBangunan" class="form-content" type="number" name="njopBangunan" required />
+        <div class="form-border"></div>
+
+        <input id="submit-btn" type="button" value="Hitung" onclick="hitungPBB()">
+
+
+
+      </form>
+      <div id="hasilPBB"></div>
+
+    </div>
+  </div>
+
+
+
+
+  <script src="index.js"></script>
+
+</body>
+
+</html>
